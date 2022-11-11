@@ -2,6 +2,8 @@ from flask import Flask
 
 
 app = Flask(__name__)
+
+
 @app.route('/')
 def hello_world() -> str:
     """hello_world Saludo de inicio
@@ -10,6 +12,7 @@ def hello_world() -> str:
     :rtype: str
     """
     return 'Pagina Inicio!'
+
 
 @app.route('/logs')
 def mostrar_logs() -> list:
